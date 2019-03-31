@@ -13,7 +13,7 @@ $(window).on('load', function() {
 
 // Heading change on scroll down
 $(document).ready(function() {
-  // Setting Variables for the scroll check (so it doesnt spam)
+  // Setting Variables for the scroll check (so it doesn't spam)
   // and scroll_heading ID
   var $scrlCHQ = 0;
   var $scrlHD = $('.Scroll_heading');
@@ -26,7 +26,7 @@ $(document).ready(function() {
   $(window).scroll(function() {
     // This checks too see if the page is scrolled down or too the scrollTop
     // Then if it has been scrolled down, it checks if the text has already been changed
-    // If it hasnt then it will change the text and set $scrlCHQ to 1 (meaning true)
+    // If it hasn't then it will change the text and set $scrlCHQ to 1 (meaning true)
     if ($(this).scrollTop() > 100) {
       if ($scrlCHQ == 0) {
         $scrlTXT.fadeOut(400);
@@ -42,7 +42,7 @@ $(document).ready(function() {
       }
       // This checks too see if the page is scrolled too the top
       // and if it has been scrolled to the top, it checks if the text has already been changed
-      // If it hasnt then it will change the text back and set $scrlCHQ to 0 (meaning false)
+      // If it hasn't then it will change the text back and set $scrlCHQ to 0 (meaning false)
     } else if ($scrlCHQ == 1) {
       $scrlTXT.fadeIn(400);
       $scrlNAV.removeClass('bg-custom2');
