@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  /* font-family */
+  color: #222;
+}
+
+.padding {
+  padding-bottom: 2rem;
+}
+
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.welcome hr {
+  border-top: 2px solid black !important;
+  width: 0%;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+}
+
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 75%;
+  margin: 0 !important;
+}
+
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#fixed {
+  background-image: url('../images/fox-glacier-walk.jpg');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Spinner */
+#preloader {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: white;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+#loader:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: grey;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+
+#loader:after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: white;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* navbar */
+.sticky-top {
+  z-index: 99;
+}
+
+.nav-link {
+  font-size: 1.1em !important;
+}
+
+.bg-custom {
+  background-color: rgba(35, 43, 43, 0);
+  -webkit-animation: fade-out 0.3s;
+  -moz-animation: fade-out 0.3s;
+  -ms-animation: fade-out 0.3s;
+  -o-animation: fade-out 0.3s;
+  animation: fade-out 0.3s;
+}
+
+/* Fire-Fox */
+@-moz-keyframes fade-out {
+  from {
+    background-color: rgba(35, 43, 43, 1);
+  }
+
+  to {
+    background-color: rgba(35, 43, 43, 0);
+  }
+}
+
+@keyframes fade-out {
+  from {
+    background-color: rgba(35, 43, 43, 1);
+  }
+
+  to {
+    background-color: rgba(35, 43, 43, 0);
+  }
+}
+
+/* Safari, Chrome, Opera */
+@-webkit-keyframes fade-out {
+  from {
+    background-color: rgba(35, 43, 43, 1);
+  }
+
+  to {
+    background-color: rgba(35, 43, 43, 0);
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fade-out {
+  from {
+    background-color: rgba(35, 43, 43, 1);
+  }
+
+  to {
+    background-color: rgba(35, 43, 43, 0);
+  }
+}
+
+.bg-custom2 {
+  background-color: rgba(35, 43, 43, 1);
+  -webkit-animation: fade-in 0.3s;
+  -moz-animation: fade-in 0.3s;
+  -ms-animation: fade-in 0.3s;
+  -o-animation: fade-in 0.3s;
+  animation: fade-in 0.3s;
+}
+
+/* Fire-Fox */
+@-moz-keyframes fade-in {
+  from {
+    background-color: rgba(35, 43, 43, 0);
+  }
+
+  to {
+    background-color: rgba(35, 43, 43, 1);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    background-color: rgba(35, 43, 43, 0);
+  }
+
+  to {
+    background-color: rgba(35, 43, 43, 1);
+  }
+}
+
+/* Safari, Chrome, Opera */
+@-webkit-keyframes fade-in {
+  from {
+    background-color: rgba(35, 43, 43, 0);
+  }
+
+  to {
+    background-color: rgba(35, 43, 43, 1);
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fade-in {
+  from {
+    background-color: rgba(35, 43, 43, 0);
+  }
+
+  to {
+    background-color: rgba(35, 43, 43, 1);
+  }
+}
+
+/* Header */
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+}
+
+/* Header Background Video */
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* Header Video Container */
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* heading text */
+header .invisible {
+  display: none;
+}
+
+header .visible {
+  -webkit-animation: Focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  -moz-animation: Focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  -ms-animation: Focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: Focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes Focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes Focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  20% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes Focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes Focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+/* Heading above Carousel */
+.Scroll_heading {
+  padding: 20px;
+}
+
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
+}
+
+.hr-expand {
+  -webkit-animation: hrexpand 1.5s;
+  -moz-animation: hrexpand 1.5s;
+  -ms-animation: hrexpand 1.5s;
+  animation: hrexpand 1.5s;
+  width: 50% !important;
+}
+
+@keyframes hrexpand {
+  0% {
+    width: 1%;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+
+@-webkit-keyframes hrexpand {
+  0% {
+    width: 1%;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+
+@-moz-keyframes hrexpand {
+  0% {
+    width: 1%;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+
+@-ms-keyframes hrexpand {
+  0% {
+    width: 1%;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+
+/* Carousel Container */
+.slide-container {
+  width: 80%;
+  margin: auto;
+}
+
+/* Cards */
+.card {
+  margin: auto;
+}
+
+/* map */
+#mapbackground {
+  background-color: #1c538f;
+}

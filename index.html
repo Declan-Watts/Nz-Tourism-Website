@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Tourism</title>
+</head>
+
+<body>
+  <div id="preloader">
+    <div id="loader"></div>
+  </div>
+  <!--  Nav Bar  -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-custom fixed-top" id="navbar-top">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand">
+        <img src="images/nz-logo.png" alt="NZ flag" width="30" height="30" class="d-inline-block align-top">
+        New Zealand
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="nav navbar-nav ml-auto" id="nav-links">
+          <li class="nav-item active">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Vaughn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--  Header  -->
+  <header>
+    <!-- Background Video -->
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="videos/nzscenary.mp4" type="video/mp4">
+    </video>
+    <!-- Background Video Container -->
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <!-- Heading Text -->
+        <div class="w-100 text-white">
+          <h1 class="display-2 invisible" id="Header_heading">New Zealand</h1>
+          <h3 class="lead mb-0" id="Scrl_txt">Scroll down for more Information</h3>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Heading for carousel -->
+  <div class="container-fluid padding">
+    <div class="row welcome text-center">
+      <div class="col-12">
+        <h1 class="display-4 Scroll_heading white">KIA ORA</h1>
+      </div>
+      <hr class="welcome-hr">
+      <div class="col-12">
+        <h3 class="Scroll_heading white">Welcome to New Zealand</h3>
+      </div>
+    </div>
+  </div>
+  <!-- Carousel -->
+  <div class="container-fluid padding">
+    <div class="slide-container">
+      <div class="carousel slide" id="carousel" data-ride="carousel">
+        <!-- Carousel Slide Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Images inside the Carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/lupins.jpg" alt="Lupins" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="images/milford_sound.jpg" alt="Milford Sound" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="images/mt-cook.jpg" alt="Mt. Cook" class="d-block w-100">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Heading Above Cards -->
+  <div class="container-fluid padding">
+    <div class="row text-center">
+      <div class="col-12">
+        <h1 class="display-4">Things to do</h1>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap Grid for Cards -->
+  <div class="container-fluid padding">
+    <div class="row text-center padding">
+      <div class="col-lg-4 col-md-6">
+        <!-- Cards -->
+        <div class="card" style="width: 18rem;">
+          <img src="images/lupins.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card" style="width: 18rem;">
+          <img src="images/mt-cook.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12">
+        <div class="card" style="width: 18rem;">
+          <img src="images/milford_sound.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="my-4">
+  </div>
+  <!-- Map -->
+  <figure>
+    <div class="fixed-wrap" id="mapbackground">
+      <img src="images/map_of_sl.png" usemap="#image-map">
+
+      <map name="image-map">
+        <area target="" alt="Stewart Island" title="Stewart Island" href=""
+          coords="160,827,170,830,176,833,179,840,173,850,165,850,158,852,151,859,143,863,136,858,122,867,128,869,121,873,114,874,111,867,117,861,122,854,119,848,127,842,133,841,131,833,137,828,138,821,134,810,133,802,139,795,145,797,152,797,156,801,160,807,164,812,169,817,172,822,165,823"
+          shape="poly">
+        <area target="" alt="Southland" title="Southland" href=""
+          coords="270,789,267,778,273,774,266,769,267,758,262,751,267,746,269,728,261,726,265,720,266,710,257,705,262,686,252,686,250,668,264,635,269,626,255,612,243,634,232,632,231,622,225,619,221,606,203,617,190,616,186,603,181,594,187,582,185,576,179,576,171,567,171,554,179,547,176,539,182,514,189,509,193,499,198,495,190,483,183,480,175,482,166,480,169,485,161,487,160,494,151,498,144,509,143,519,136,523,130,527,124,532,116,539,109,545,101,551,93,559,83,567,77,577,73,586,66,594,61,599,54,609,48,622,45,634,39,642,40,649,32,655,25,656,20,664,29,665,30,673,17,680,17,689,19,702,33,698,38,703,30,715,36,713,42,718,34,724,39,729,45,733,54,733,64,735,75,735,84,738,95,738,101,728,116,725,121,728,129,736,134,740,132,749,140,757,148,751,162,754,167,750,178,756,183,765,190,762,193,769,179,773,184,779,190,784,192,776,205,782,199,785,211,782,213,776,222,781,229,781,236,785,237,791,247,793,258,793,262,785"
+          shape="poly">
+        <area target="" alt="Otago" title="Otago" href=""
+          coords="273,788,270,778,276,773,269,767,270,757,265,750,271,743,270,727,265,724,268,715,264,704,263,693,266,683,255,682,255,670,258,656,264,648,266,635,270,629,272,622,259,612,257,605,243,632,235,630,235,620,226,616,221,605,206,613,193,613,192,604,184,592,189,581,189,575,180,573,173,564,175,552,181,547,179,534,184,519,188,511,197,509,207,509,219,502,225,498,233,495,240,491,241,477,252,470,257,460,273,459,282,453,289,457,298,454,306,442,315,441,317,450,309,461,305,467,305,476,306,486,304,497,306,503,313,503,311,515,315,521,323,518,325,526,336,528,340,534,341,548,346,556,352,563,362,564,371,561,376,565,377,575,379,583,388,583,397,571,403,563,413,562,422,562,431,562,440,564,446,566,439,578,432,587,425,596,422,605,417,618,421,622,420,629,418,637,411,644,409,651,402,660,395,670,404,673,411,679,409,688,399,690,388,693,375,695,368,700,362,708,359,723,350,731,332,746,324,749,322,761,317,767,310,774,305,779,290,783,282,787"
+          shape="poly">
+        <area target="" alt="Canterbury" title="Canterbury" href=""
+          coords="318,441,326,429,340,419,347,405,352,404,350,398,358,390,371,380,376,382,388,372,399,372,404,362,411,360,417,353,427,346,435,346,441,333,453,330,465,312,473,313,477,308,485,309,496,306,501,308,503,294,513,292,520,277,534,273,541,261,545,253,553,251,557,244,566,243,569,232,581,220,584,208,592,208,593,217,600,220,602,227,604,235,609,236,610,243,617,247,614,255,624,257,633,251,638,244,636,240,641,233,648,227,658,225,662,217,660,211,668,205,674,199,686,188,689,192,701,189,710,189,715,191,707,197,702,207,699,216,703,217,697,223,687,231,683,237,678,243,678,247,669,251,664,257,660,268,656,277,653,288,650,296,644,302,646,308,640,313,629,320,622,326,606,334,597,341,592,353,589,364,588,376,589,385,589,393,596,394,602,397,610,400,620,405,625,410,625,418,620,430,608,430,600,431,592,427,584,427,567,426,584,418,572,416,560,412,556,421,557,427,551,431,536,437,456,490,456,498,452,507,447,520,447,531,448,540,447,549,448,559,447,566,431,559,412,559,402,561,386,582,382,583,378,562,369,559,358,561,347,555,343,543,343,529,333,523,325,518,321,513,315,518,314,502,307,501,306,491,307,481,307,469,318,450"
+          shape="poly">
+        <area target="" alt="West Coast" title="West Coast" href=""
+          coords="193,507,196,498,198,497,197,487,189,479,181,477,169,479,182,466,193,449,201,449,213,442,218,447,227,447,235,441,245,433,259,421,287,400,297,400,301,396,311,393,323,374,335,370,346,357,357,349,365,334,375,334,379,325,394,321,404,315,428,287,442,274,454,246,460,233,463,212,468,201,475,184,475,169,483,169,495,165,511,153,529,122,532,109,532,64,544,49,544,60,551,64,559,72,553,80,561,80,569,82,575,92,580,97,587,101,577,106,577,118,573,125,561,124,560,133,555,144,553,152,548,154,548,161,533,164,533,172,533,182,529,190,532,200,536,209,544,212,551,216,555,223,555,233,563,235,565,241,556,242,551,249,541,253,531,271,519,274,512,289,502,293,499,305,490,305,475,306,474,309,464,310,456,317,452,326,439,330,434,342,424,345,415,350,408,358,400,363,398,370,387,368,379,376,370,378,362,383,354,388,349,394,350,403,342,407,338,416,331,423,322,430,315,440,305,439,298,450,289,454,279,452,273,456,257,458,249,468,237,478,237,490,224,496,208,507"
+          shape="poly">
+        <area target="" alt="Tasman" title="Tasman" href=""
+          coords="564,234,555,231,556,217,544,209,536,208,535,200,529,189,537,180,535,166,548,162,549,154,556,150,556,142,563,134,563,126,572,126,577,120,579,108,587,104,580,96,568,78,555,78,560,71,551,61,545,51,571,27,587,15,607,19,591,20,585,28,585,36,587,44,592,49,597,53,605,56,615,51,617,60,617,68,615,78,617,86,620,94,623,102,625,109,632,114,636,121,641,126,639,134,644,140,631,141,627,148,623,154,617,162,609,166,601,176,603,185,595,194,591,205,581,205,579,218"
+          shape="poly">
+        <area target="" alt="Marlborough" title="Marlborough" href=""
+          coords="633,115,643,106,651,97,671,87,689,70,701,69,696,85,712,77,722,79,730,81,722,95,740,90,736,99,729,109,722,115,713,114,709,123,708,130,712,143,720,146,720,155,722,163,730,165,725,174,721,183,714,190,701,186,692,188,684,186,677,195,667,204,659,211,659,220,651,224,639,231,632,239,635,246,625,252,617,254,619,244,611,240,609,231,601,226,603,218,595,211,593,202,601,191,605,182,605,174,617,166,623,161,628,153,633,143,645,142,641,133,643,122"
+          shape="poly">
+      </map>
+    </div>
+  </figure>
+  <!-- social media -->
+  <div class="container-fluid padding">
+    <div class="row text-center padding">
+      <div class="col-12">
+        <h2>Find us Here!</h2>
+      </div>
+      <div class="col-12 social padding">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+  <!-- Fixed Background -->
+  <figure>
+    <div class="fixed-wrap">
+      <div id="fixed">
+      </div>
+    </div>
+  </figure>
+  <!-- footer -->
+  <footer>
+    <div class="container-fluid padding">
+      <div class="row text-center">
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
