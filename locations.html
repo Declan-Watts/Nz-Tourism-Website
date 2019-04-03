@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Tourism</title>
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
+    <!--  Nav Bar  -->
+    <nav
+      class="navbar navbar-expand-md navbar-dark bg-custom fixed-top"
+      id="navbar-top"
+    >
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">
+          <img
+            src="images/nz-logo.png"
+            alt="NZ flag"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+          />
+          New Zealand
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggler"
+          aria-controls="navbarToggler"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="nav navbar-nav ml-auto" id="nav-links">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="history.html" class="nav-link">History</a>
+            </li>
+            <li class="nav-item">
+              <a href="locations.html" class="nav-link active">Site Seeing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                id="navbarDropdown"
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Events
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a href="north_event.html" class="dropdown-item"
+                  >North Island</a
+                >
+                <a href="south_event.html" class="dropdown-item"
+                  >South Island</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Fixed Background -->
+    <figure>
+      <div class="fixed-wrap">
+        <div id="fixed"></div>
+        <!-- footer -->
+        <footer>
+          <div class="container-fluid padding">
+            <div class="row text-center"></div>
+          </div>
+        </footer>
+      </div>
+    </figure>
+  </body>
+</html>
