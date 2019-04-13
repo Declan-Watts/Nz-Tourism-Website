@@ -37,8 +37,8 @@ $(document).ready(function() {
           $scrlHD.addClass('black');
           $scrlHR.addClass('hr-expand');
           $scrlHD.fadeIn(1000);
-          $scrlCHQ = 1;
         });
+        $scrlCHQ = 1;
       }
       // This checks too see if the page is scrolled too the top
       // and if it has been scrolled to the top, it checks if the text has already been changed
@@ -53,8 +53,8 @@ $(document).ready(function() {
         $scrlHR.removeClass('hr-expand');
         $scrlHD.addClass('white');
         $scrlHD.fadeIn(200);
-        $scrlCHQ = 0;
       });
+      $scrlCHQ = 0;
     }
   });
 });
