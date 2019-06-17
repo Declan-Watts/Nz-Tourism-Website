@@ -1,113 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <script src="js/script.js"></script>
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Tourism</title>
-  </head>
-  <body>
-    <!-- Preloader -->
-    <div id="preloader">
-      <div id="loader"></div>
-    </div>
-    <!--  Nav Bar  -->
-    <nav
-      class="navbar navbar-expand-md navbar-dark bg-custom fixed-top"
-      id="navbar-top"
-    >
-      <div class="container-fluid">
-        <a href="index.html" class="navbar-brand">
-          <img
-            src="images/nz-logo.png"
-            alt="NZ flag"
-            width="30"
-            height="30"
-            class="d-inline-block align-top"
-          />
-          New Zealand
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarToggler"
-          aria-controls="navbarToggler"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarToggler">
-          <ul class="nav navbar-nav ml-auto" id="nav-links">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="history.html" class="nav-link">History</a>
-            </li>
-            <li class="nav-item">
-              <a href="locations.html" class="nav-link">Site Seeing</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                href="#"
-                id="navbarDropdown"
-                class="nav-link dropdown-toggle"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Events
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a href="north_event.html" class="dropdown-item active"
-                  >North Island</a
-                >
-                <a href="south_event.html" class="dropdown-item"
-                  >South Island</a
-                >
-              </div>
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Fixed Background -->
-    <figure>
-      <div class="fixed-wrap">
-        <div id="fixed"></div>
-        <!-- footer -->
-        <footer>
-          <div class="container-fluid padding">
-            <div class="row text-center"></div>
-          </div>
-        </footer>
-      </div>
-    </figure>
-  </body>
+	<head>
+		<!-- Bootstrap CDN -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<!-- Meta Tags -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="description" content="New Zealand Events North Island" />
+		<meta
+			name="keywords"
+			content="New Zealand, NZ, Events, Whats Happening, Upcomming Events, Up comming, North Island"
+		/>
+		<meta name="author" content="Declan Watts" />
+		<!-- AJAX CDN -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- Bootstrap JS CDN -->
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+		<!-- Font Awesome CDN -->
+		<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+		<!-- CSS SHEET -->
+		<link rel="stylesheet" href="css/style.css" />
+		<title>NZ Tourism | North Island</title>
+		<link
+			rel="shortcut icon"
+			href="images/nz-logo-black.png"
+			alt="icon"
+			type="image/png"
+		/>
+	</head>
+	<body>
+		<!-- Preloader -->
+		<div id="preloader">
+			<div id="loader"></div>
+		</div>
+		<!--  Nav Bar  -->
+		<nav
+			class="navbar navbar-expand-md navbar-dark bg-custom fixed-top"
+			id="navbar-top"
+		>
+			<div class="container-fluid">
+				<a href="index.html" class="navbar-brand">
+					<img
+						src="images/nz-logo.png"
+						alt="NZ flag"
+						width="30"
+						height="30"
+						class="d-inline-block align-top"
+					/>
+					New Zealand
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarToggler"
+					aria-controls="navbarToggler"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarToggler">
+					<ul class="nav navbar-nav ml-auto" id="nav-links">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="history.html" class="nav-link">History</a>
+						</li>
+						<li class="nav-item">
+							<a href="locations.html" class="nav-link">Site Seeing</a>
+						</li>
+						<li class="nav-item dropdown active">
+							<a
+								href="#"
+								id="navbarDropdown"
+								class="nav-link dropdown-toggle"
+								role="button"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								Events
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a href="north_event.html" class="dropdown-item active"
+									>North Island</a
+								>
+								<a href="south_event.html" class="dropdown-item"
+									>South Island</a
+								>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a href="contact.html" class="nav-link">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- End of Nav -->
+		<!--  Header  -->
+		<header>
+			<!-- Background Image -->
+			<div class="bg-img" id="events-bg-img">
+				<!-- TODO: Fill in the alt attribute -->
+				<!-- <img src="images/history_header.jpg" alt="" /> -->
+			</div>
+			<!-- Background Image Container -->
+			<div class="container h-100">
+				<div class="d-flex h-100 text-center align-items-center">
+					<!-- Heading Text -->
+					<div class="w-100 text-white">
+						<h1 class="display-2 invisible" id="Header_heading">
+							Events - North Island
+						</h1>
+						<h3 class="lead mb-0" id="Scrl_txt">
+							Scroll down for more Information
+						</h3>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- End of Background Image -->
+		<!-- End of Header -->
+		<!-- Header Above Cards -->
+		<div class="container-fluid padding">
+			<div class="row welcome text-center">
+				<div class="col-12">
+					<h1 class="display-4 Scroll_heading white">North Island</h1>
+				</div>
+				<hr class="welcome-hr" />
+				<div class="col-12">
+					<h3 class="Scroll_heading white">Current Upcomming Events</h3>
+				</div>
+			</div>
+		</div>
+		<!-- End of Header Above Cards -->
+		<!-- Bootstrap Grid for Cards -->
+		<div class="container-fluid padding">
+			<div class="row text-center padding">
+				<!-- Card 1 -->
+				<div class="col-lg-4 col-md-6 padding">
+					<div class="card">
+						<img src="images/u2_tour.jpg" class="card-img-top" alt="U2 Tour" />
+						<div class="card-body">
+							<p class="card-text">
+								U2 The Joshua Tree Tour 2019
+							</p>
+							<button
+								type="button"
+								class="btn btn-outline-secondary"
+								onclick="display_information('u2');"
+							>
+								Find Out!
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- End of Card 1 -->
+				<!-- Card 2 -->
+				<div class="col-lg-4 col-md-6 padding">
+					<div class="card">
+						<img
+							src="images/royal_family_tour.jpg"
+							class="card-img-top"
+							alt="Royal Family Tour"
+						/>
+						<div class="card-body">
+							<p class="card-text">
+								The Royal Family Tour
+							</p>
+							<button
+								type="button"
+								class="btn btn-outline-secondary"
+								onclick="display_information('royal');"
+							>
+								Find Out!
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- End of Card 2 -->
+				<!-- Card 3 -->
+				<div class="col-lg-4 col-md-6 padding">
+					<div class="card">
+						<img
+							src="images/comedy_allstars.jpg"
+							class="card-img-top"
+							alt="Comedy Allstars"
+						/>
+						<div class="card-body">
+							<p class="card-text">
+								The Classic Comedy Allstars
+							</p>
+							<button
+								type="button"
+								class="btn btn-outline-secondary"
+								onclick="display_information('comedy');"
+							>
+								Find Out!
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- End of Card 3 -->
+			</div>
+			<hr class="my-4" />
+		</div>
+		<!-- End of Cards -->
+		<!-- Pop Up Model -->
+		<div class="bg-model">
+			<div class="model-content" id="site-seeing-model-content">
+				<div class="model-content-inner">
+					<a
+						href="javascript:void(0)"
+						class="model-content-close"
+						onclick="close_bg_model();"
+					>
+						<i class="fas fa-times"></i>
+					</a>
+					<div class="model-content-inner-header"></div>
+					<div class="model-content-inner-paragraph"></div>
+				</div>
+			</div>
+		</div>
+		<!-- End of Pop Up Model -->
+		<!-- Fixed Background -->
+		<figure>
+			<div class="fixed-wrap">
+				<div id="fixed">
+					<!-- footer -->
+					<footer>
+						<div class="container-fluid padding">
+							<div class="row text-center"></div>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</figure>
+	</body>
+	<script src="js/script.js"></script>
 </html>
